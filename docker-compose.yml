@@ -1,0 +1,9 @@
+nginx:
+  image: local/nginx:local
+  container_name: nginx-lua
+  ports:
+    - "80:80"
+    - "443:443"
+  stdin_open: true
+  restart: on-failure
+  tty: true
