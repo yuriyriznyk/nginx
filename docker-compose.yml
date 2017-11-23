@@ -1,5 +1,5 @@
 nginx:
-  image: local/nginx:local
+  image: yuriiriznyk/nginx:latest
   container_name: nginx-lua
   ports:
     - "80:80"

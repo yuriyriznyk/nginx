@@ -3,5 +3,5 @@
 #Purpose: build images consists nginx-lua
 
 docker build -t 'local/nginx:local' --no-cache --force-rm .
-#docker tag local/nginx:local docker-repo.pitchbook.com/riznykyurii-nginx:$(date +%Y%m%d)
-#docker push docker-repo.pitchbook.com/riznykyurii-nginx:$(date +%Y%m%d)
+docker tag local/nginx:local yuriiriznyk/nginx:latest
+docker push yuriiriznyk/nginx:latest
